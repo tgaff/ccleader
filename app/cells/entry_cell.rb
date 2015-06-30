@@ -4,6 +4,7 @@ class EntryCell < Cell::Rails
     @name = @entry[:member]
     @rank = @entry[:rank]
     @score = @entry[:score]
+    @board = args[:board]
     render
   end
 

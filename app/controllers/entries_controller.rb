@@ -64,6 +64,6 @@ class EntriesController < ApplicationController
   end
 
   def entry_params
-    (params[:entry] || {}).slice(:name, :score)
+    (params[:entry] || {}).slice(:name, :score, :board)
   end
 end
