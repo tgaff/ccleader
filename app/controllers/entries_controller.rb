@@ -36,7 +36,7 @@ class EntriesController < ApplicationController
   end
 
   def destroy
-    result = delete_service.execute(name: params[:id])
+    result = delete_service.execute(name: params[:id], board: params[:board])
     return not_found unless result
 
     respond_to do |format|
@@ -64,6 +64,6 @@ class EntriesController < ApplicationController
   end
 
   def entry_params
-    (params[:entry] || {}).slice(:name, :score)
+    (params[:entry] || {}).slice(:name, :score, :board)
   end
 end

@@ -1,6 +1,7 @@
 <span ng-hide='editing'>{{entry.score}}</span>
 <form method='post' action='/entries' ng-show='editing' csrf>
   <input style='display:none' type='text' name='entry[name]' value='{{entry.member}}'/>
+  <input style='display:none' type='text' name='entry[board]' value='{{entry.board}}'/>
   <input style='width:100%' ng-show='editing' name='entry[score]' value='{{entry.score}}' />
 </form>
 

@@ -18,6 +18,12 @@
         <div class="small-7 columns">
           <%= number_field_tag :score, nil, {name: 'entry[score]'} %>
         </div>
+        <div class="small-3 columns">
+          <span class="prefix"><%= t('entries.board') %></span>
+        </div>
+        <div class="small-9 columns">
+          <%= text_field_tag :board, 'board1', {name: 'entry[board]'}  %>
+        </div>
         <div class="small-2 columns ">
           <%= submit_tag 'Add', class: 'button postfix' %>
         </div>

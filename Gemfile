@@ -6,13 +6,14 @@ gem 'rails', '4.1.7'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+#gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '~> 5.0.1'
 
 gem 'foundation-rails' 
 
 gem 'kaminari'
 
-gem 'cells'
+gem 'cells', '~> 3'
 gem 'bower-rails'
 gem 'faker'
 
