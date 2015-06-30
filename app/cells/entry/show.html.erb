@@ -3,7 +3,7 @@
   <td><%= @name %></td>
   <td><%= @board %></td>
   <td style='width: 10%'>
-    <entry-form entry='<%= @entry.to_json %>'></entry-form>
+    <entry-form entry='<%= @entry.update({board: @board}).to_json %>'></entry-form>
   </td>
   <td style="width: 10%"><%= render_cell :entry, :delete_form, entry: @entry, board: @board %></td>
 </tr>
