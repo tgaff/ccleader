@@ -1,3 +1,12 @@
+# Fork
+
+At a recent GDI event one of the questions brought to the mentors involved using ccleader but with multiple leaderboards.  As the answer at the time proved less simple than first it looked at first glance, I've gone ahead and made changes to accomplish that here.
+
+Please note however, this is more of a quick hack.  In particular I didn't touch the tests (and should have) and the display of data isn't ideal (the team didn't actually need the display anyway).
+
+And now back to your regularly scheduled README.
+
+
 # A Simple Leaderboard
 
 This somewhat simple leaderboard is meant to exhibit some of the approaches and design decisions
