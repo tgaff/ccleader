@@ -5,5 +5,5 @@
   <td style='width: 10%'>
     <entry-form entry='<%= @entry.to_json %>'></entry-form>
   </td>
-  <td style="width: 10%"><%= render_cell :entry, :delete_form, entry: @entry %></td>
+  <td style="width: 10%"><%= render_cell :entry, :delete_form, entry: @entry, board: @board %></td>
 </tr>

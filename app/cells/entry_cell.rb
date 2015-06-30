@@ -10,6 +10,7 @@ class EntryCell < Cell::Rails
 
   def delete_form(args)
     @entry = args[:entry]
+    @board = args[:board]
     render
   end
 end
